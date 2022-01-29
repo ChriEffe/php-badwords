@@ -1,6 +1,7 @@
 <?php 
 $text = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.';
-($text);
+$badWord = $_GET["badWord"];
+$censured = str_replace($badWord, "***", $text);
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +14,8 @@ $text = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.';
 </head>
 <body>
     <h1><?php echo $text ?></h1>
-    <h2><?php echo strlen($text) ?></h2>
+    <h2>Lunghezza stringa: <?php echo strlen($text) ?></h2>
+    <h1>Testo censurato: <?php echo ($censured) ?></h1>
+    <h2>Lunghezza stringa: <?php echo strlen($censured) ?></h2>
 </body>
 </html>
