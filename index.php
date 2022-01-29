@@ -1,5 +1,6 @@
 <?php 
-
+$text = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.';
+($text);
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +12,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Ciao</h1>
+    <h1><?php echo $text ?></h1>
+    <h2><?php echo strlen($text) ?></h2>
 </body>
 </html>
